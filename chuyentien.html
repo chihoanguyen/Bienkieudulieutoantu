@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Amount From<br/>
+    <input type="text" id="dauvao">
+    <select id="select1">
+        <option value="a">VNĐ</option>
+        <option value="b">USD</option>
+    </select>
+    <select id="select2">
+        <option value="a">VNĐ</option>
+        <option value="b">USD</option>
+    </select>
+    <button onclick="chuyendoi()">Convert</button>
+<script>
+    function chuyendoi(){
+        let nhapvao =document.getElementById('dauvao').value;
+    }
+    let ab=document.getElementById('select1').value;
+    let ac=document.getElementById('select2').value;
+    if (ab==ac){
+        alert(nhapvao);
+    }
+    if(ab=="a" && ac=="b") {
+        alert(nhapvao/24000);
+    }
+    else{
+        alert(nhapvao*24000);
+    }
+</script>
+</form>
+
+</body>
+</html>
